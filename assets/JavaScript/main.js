@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () =>{
 //Test Dark mode.
 if ( JSON.parse (localStorage.getItem('theme') ) === true){
 document.body.classList.add ( "dark")
+ball.classList.toggle ( "ball-move")
 }else{
 document.body.classList.remove ( "dark")
 }
@@ -24,9 +25,9 @@ document.body.classList.remove ( "dark")
 themeButton.addEventListener( "click", ()=>{
   document.body.classList.toggle ( "dark")
   ball.classList.toggle ( "ball-move")
-  moon.classList.toggle ( "light" )
-  sun.classList.toggle ( "darkSun" )
   if ( document.body.classList.contains ( "dark" ) ){
     localStorage.setItem('theme', JSON.stringify(true))
+  }else{
+    localStorage.setItem('theme', JSON.stringify(false))
   }
 } )

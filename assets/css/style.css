@@ -23,7 +23,7 @@
     justify-content: space-between;
     color: var(--color-primary);
     padding: 0;
-    transition: ease 2000ms;
+    transition:  600ms;
     cursor: pointer;
 }
 .theme-button .ball-move{
@@ -442,14 +442,15 @@ footer{
 .contenedor{
     display: flex;
     width:80vw;
+    flex-direction: row;
+    flex-wrap: wrap;
     height: auto;
     margin: 0 auto;
-    gap: 2vw;
+    gap: 9vw;
     justify-content: center;
     margin-top: 8vh;
 }
 footer svg{
-    
     stroke: var(--color-secondary);
 }
 .contact-icons{
@@ -459,7 +460,6 @@ footer svg{
     border-radius: 50%;
     margin: 0 auto;
     height:auto;
-    gap: 15px;
     margin-bottom: 3vh;
     border: 1.5px solid var(--color-secondary);
     padding: 15px;
@@ -468,6 +468,11 @@ footer svg{
     transform: scale(1.5);
     cursor: pointer;
 }
+.whatsapp{
+    fill: var(--color-secondary);
+    /* stroke: var(--color-secondary); */
+}
+
  
 footer h3{
     grid-area: 1/1/2/3;
@@ -483,13 +488,14 @@ footer.card1{
     flex-direction:column;
     justify-content: center;
     text-align: center;
-    
 }
-footer.card2{
+footer.card2,
+footer.card3{
     width: 20vw;
     display: flex;
     flex-direction:column;
     text-align: center;
+    min-width: 118px;
 }
 .card1 img{
     margin: 0 auto;
