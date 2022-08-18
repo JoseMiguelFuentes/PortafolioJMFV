@@ -7,12 +7,32 @@
     <title>Jomifuver</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" type="image/vnd.microsoft.icon" href="./assets/images/icons8-diploma-64.png">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
     <nav >
+        <div class="theme-button">
+            <figure class='ball'>
+                
+            </figure>
+            <div class="moon">
+                <i class='bx bx-moon' id="moon"></i>
+            </div>
+
+            <div class="sun"> 
+                <i class='bx bx-sun' id="sun"></i>
+            </div>
+            
+        </div>
         <input type="checkbox" id="menu">
-        <label for="menu" class="label__menu"><img src="./assets/images/menu 1.svg" alt="burger">
+        <label for="menu" class="label__menu">
+            <!-- <img class="burger" src="./assets/images/menu 1.svg" alt="burger"> -->
+            <svg class="burger" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 12H21"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 6H21"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 18H21"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
         </label>
         <ul class="navbar-ul">
             <li class="li li-home"><a href="#">Home</a></li>
@@ -27,7 +47,14 @@
     </header>   
         <section class="first__section">
             <div class="first__section-div1">
-                <img class="first__section-fondo" src="./assets/images/Group 99 mobile.svg" alt="lines"><!-- -->
+                <!-- <img class="first__section-fondo" src="./assets/images/Group 99 mobile.svg" alt="lines"> -->
+                <svg  class="first__section-fondo" viewBox="0 0 1442 526" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 106.724C337.152 -144.917 868.662 668.308 1438 502.495"  stroke-width="3"/>
+                    <path d="M2 77.8278C338.386 -174.352 870.266 640.615 1440 474.447"  stroke-width="2"/>
+                    <path d="M4 49.8278C340.152 -202.352 871.662 612.615 1441 446.447"  stroke-width="3"/>
+                    </svg>    
+                    
+
             </div>
             <div class="first__section-div2">
                 <img class="developer" src="./assets//images/ready.png" alt="Developer">
@@ -35,21 +62,56 @@
             <h3 class="first__section-h3">Hola, Soy Jose Miguel Fuentes</h3>
             <h1 class="first__section-h1">Diseñador y <br> desarrollador web</h1>
             <div class="div__icons">
-                <img class="icons div__icons-linked" src="./assets/images/cib_linkedin-in.svg" alt="linkedin-img">
-                <img class="icons div__icons-insta" src="./assets/images/ant-design_instagram-filled.svg" alt="instagram-img">
-                <img class="icons div__icons-twit"src="./assets/images/ant-design_twitter-outlined.svg" alt="twitter-img">
+                <a href="https://www.linkedin.com/in/jose-miguel-fuentes" target="_blank">
+                    <!-- <img class="icons div__icons-linked" src="./assets/images/cib_linkedin-in.svg" alt="linkedin-img"> -->
+                    <svg class="icons div__icons-linked" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" alt="linkedin-img">
+                        <g clip-path="url(#clip0_109_297)">
+                        <path d="M36.2379 22.1637V34.5H29.9916V23.625C29.9916 22.2912 29.9843 20.6433 29.4643 19.3304C29.1986 18.6596 28.7905 18.0507 28.163 17.6129C27.5344 17.1745 26.7283 16.9375 25.7191 16.9375C24.711 16.9375 23.88 17.1345 23.2056 17.5078C22.5283 17.8828 22.0386 18.4192 21.691 19.0494C21.0087 20.2863 20.8679 21.897 20.8679 23.43V34.5H14.6191V12.1325H20.5779V14.82V15.32H21.0779H21.1791H21.4807L21.6214 15.0533C22.5077 13.3732 24.7084 11.5462 28.0441 11.5462C31.5927 11.5462 33.581 12.7039 34.7218 14.5159C35.896 16.381 36.2379 19.0339 36.2379 22.1637ZM9.07414 34.5H2.81789V12.1325H9.07414V34.5ZM5.94164 7.945C3.90392 7.945 2.23914 6.25253 2.23914 4.2025C2.23914 3.22054 2.62922 2.27879 3.32357 1.58444C4.01793 0.890084 4.95967 0.5 5.94164 0.5C6.9236 0.5 7.86535 0.890084 8.5597 1.58444C9.25405 2.27879 9.64414 3.22054 9.64414 4.2025C9.64414 6.25253 7.97936 7.945 5.94164 7.945Z" />
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_109_297">
+                        <rect width="40" height="40" />
+                        </clipPath>
+                        </defs>
+                        </svg>
+                </a>
+
+                <!-- <img class="icons div__icons-insta" src="./assets/images/ant-design_instagram-filled.svg" alt="instagram-img"> -->
+                <svg class="icons div__icons-insta" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" alt="instagram-img">
+                    <path d="M35.0164 13.5789L35.0164 13.5789L35.0166 13.5828C35.1221 15.457 35.12 17.3193 35.118 19.21C35.1177 19.4727 35.1174 19.736 35.1174 20C35.1174 20.2956 35.1178 20.5904 35.1183 20.8845C35.121 22.7433 35.1237 24.5738 35.0167 26.4163L35.0164 26.4211C34.8984 28.8585 34.3514 30.9299 32.6427 32.6386C30.9379 34.3435 28.8624 34.8942 26.4252 35.0123L26.4213 35.0125C24.547 35.118 22.6847 35.1159 20.794 35.1138C20.5313 35.1136 20.268 35.1133 20.0041 35.1133C19.7407 35.1133 19.478 35.1136 19.2157 35.1138C17.3275 35.1159 15.4646 35.118 13.5868 35.0125L13.583 35.0123C11.1456 34.8942 9.07414 34.3473 7.36546 32.6386C5.66058 30.9338 5.10984 28.8583 4.9918 26.4211L4.99158 26.4172C4.88613 24.5429 4.88817 22.6775 4.89024 20.7886C4.89052 20.5262 4.89081 20.2634 4.89081 20C4.89081 19.7366 4.89052 19.4738 4.89024 19.2115C4.88817 17.3233 4.88613 15.4605 4.99159 13.5827L4.9916 13.5827L4.99179 13.5789C5.10985 11.1415 5.65678 9.07004 7.36546 7.36137C9.07033 5.65649 11.1458 5.10575 13.583 4.9877L13.583 4.98771L13.5869 4.98749C15.4611 4.88204 17.3234 4.88408 19.2142 4.88615C19.4769 4.88643 19.7402 4.88672 20.0041 4.88672C20.2675 4.88672 20.5303 4.88643 20.7926 4.88615C22.6808 4.88408 24.5436 4.88204 26.4214 4.9875V4.98751L26.4252 4.9877C28.8626 5.10576 30.9341 5.65269 32.6427 7.36137C34.3476 9.06624 34.8984 11.1417 35.0164 13.5789ZM15.2932 20C15.2932 17.409 17.4091 15.293 20.0002 15.293C22.5912 15.293 24.7072 17.409 24.7072 20C24.7072 22.591 22.5912 24.707 20.0002 24.707C17.4091 24.707 15.2932 22.591 15.2932 20ZM11.4885 20C11.4885 24.7097 15.2905 28.5117 20.0002 28.5117C24.7099 28.5117 28.5119 24.7097 28.5119 20C28.5119 15.2903 24.7099 11.4883 20.0002 11.4883C15.2905 11.4883 11.4885 15.2903 11.4885 20ZM25.969 11.6602C25.969 12.9712 27.0284 14.0309 28.3394 14.0312L28.34 13.5312C28.5858 13.5316 28.8293 13.4834 29.0564 13.3895C29.2836 13.2955 29.49 13.1577 29.6638 12.9839C29.8376 12.8101 29.9754 12.6037 30.0693 12.3766C30.1633 12.1494 30.2115 11.906 30.2111 11.6602H30.7111C30.7111 11.6599 30.7111 11.6597 30.7111 11.6595C30.7108 10.3485 29.6511 9.28906 28.34 9.28906C27.0287 9.28906 25.969 10.3489 25.969 11.6602Z" />
+                </svg>
+
+                <!-- <img class="icons div__icons-twit"src="./assets/images/ant-design_twitter-outlined.svg" alt="twitter-img"> -->
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icons div__icons-twit">
+                    <path d="M13.6357 26.9493C11.2079 26.8975 9.13095 25.4663 8.16464 23.4133C8.32517 23.4237 8.48873 23.4297 8.65625 23.4297L8.65764 23.4297C9.29141 23.4279 9.92244 23.3464 10.5359 23.1871L10.5093 22.2131C7.92092 21.6894 5.92597 19.558 5.61312 16.8974C6.39021 17.2153 7.21894 17.3961 8.06235 17.4293L9.83259 17.499L8.36 16.5141C6.69996 15.4038 5.61328 13.5176 5.61328 11.3789L5.61328 11.3773C5.6105 10.5269 5.78514 9.688 6.12299 8.91329C9.47862 12.7334 14.3256 15.2051 19.7278 15.4876L20.3734 15.5214L20.2437 14.888C20.1476 14.4184 20.0898 13.9368 20.0898 13.4609C20.0898 10.0639 22.8361 7.29688 26.25 7.29688L26.2511 7.29687C27.0948 7.29501 27.9298 7.46692 28.7042 7.8019C29.4786 8.13688 30.1756 8.62774 30.752 9.24391L30.9408 9.44571L31.2121 9.39325C32.2763 9.18747 33.3105 8.85601 34.2932 8.40701C33.7731 9.2764 33.042 10.0102 32.1587 10.535L32.4677 11.462C33.2599 11.3765 34.0373 11.2152 34.7874 10.9942C34.1364 11.7289 33.4064 12.3961 32.6148 12.9754L32.3927 13.138L32.4113 13.4126C32.4295 13.682 32.4297 13.9542 32.4297 14.2461C32.4297 22.8397 25.893 32.7031 13.9766 32.7031C11.0251 32.7031 8.24437 32.0164 5.77471 30.7907C8.84121 30.7004 11.6621 29.6219 13.9333 27.8429L15.0359 26.9793L13.6357 26.9493Z" />
+                </svg>
             </div>
         </section>
         
         <div class="second__section-div1">
             
         </div>
-        <img class="second__section--fondo2" src="./assets/images/Group 98.svg" >
+        <!-- <img class="second__section--fondo2" src="./assets/images/Group 98.svg" > -->
+        <svg class="second__section--fondo2" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" 
+	        viewBox="0 0 1529 392" style="enable-background:new 0 0 1529 392;" xml:space="preserve">
+            <path class="st0" d="M66,345.9C122.8-133.9,1201.8,684.6,1510.6,211" stroke-width="3"/>
+            <path class="st0" d="M64,301.8c55.9-472.6,1118.9,333.6,1423-132.8" stroke-width="2"/>
+            <path class="st0" d="M39.4,264.3c56.2-475.2,1125,335.4,1430.8-133.6" stroke-width="3"/>
+        </svg>
         <section class="second-section">
             <div class="second__section-textos">
                 <h3 class="second__section-h3" id="about-me">Acerca de mí</h3>
                 <p class="second__section-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eaque ut quae quia ducimus repellendus facilis ratione minus, quaerat consectetur soluta libero provident similique? Quia explicabo tempore eveniet est aspernatur. Optio vel quae, explicabo incidunt veritatis animi necessitatibus </p>
-                <img class="third__section-img" src="./assets/images/Group 97 - med.svg" >
+                <!-- <img class="third__section-img" src="./assets/images/Group 97 - med.svg" > -->
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	            viewBox="0 0 121.6 195" style="enable-background:new 0 0 121.6 195;" xml:space="preserve" class="third__section-img">
+                <style type="text/css">
+                    .st0{fill:none;stroke-width:3}
+                </style>
+                    <circle class="st0" cx="97.5" cy="97.5" r="97.3"/>
+                    <circle class="st0" cx="97.5" cy="94.9" r="81.7"/>
+                    <circle class="st0" cx="97.5" cy="94.9" r="68.7"/>
+                </svg>
             </div>
         </section> 
 
@@ -114,7 +176,12 @@
                     <h4>UI Enginer</h4>
                     <p>Google</p>
                 </div>
-                <img class="fourth__section-img" src="./assets/images/Group 97.svg" >
+                <!-- <img class="fourth__section-img" src="./assets/images/Group 97.svg" > -->
+                <svg width="195" height="195" viewBox="0 0 195 195" fill="none" xmlns="http://www.w3.org/2000/svg" class="fourth__section-img">
+                    <circle cx="97.5" cy="97.5" r="97.25"  stroke-width="3"/>
+                    <circle cx="97.5" cy="94.9" r="81.65"  stroke-width="3"/>
+                    <circle cx="97.5" cy="94.9" r="68.65"  stroke-width="3"/>
+                </svg>
             </div>
         </section> 
 
@@ -150,18 +217,25 @@
             <div class="contenedor">
                 <div class="footer-card card1">
                     <div class="contact-icons">
-                        <img src="./assets/images/phone 3.svg">
+                        <!-- <img src="./assets/images/phone 3.svg"> -->
+                        <svg  viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M36.6669 28.2V33.2C36.6688 33.6642 36.5737 34.1236 36.3877 34.5489C36.2018 34.9742 35.929 35.356 35.587 35.6698C35.245 35.9836 34.8412 36.2225 34.4015 36.3712C33.9618 36.5199 33.4958 36.5751 33.0335 36.5333C27.9049 35.9761 22.9785 34.2236 18.6502 31.4167C14.6233 28.8578 11.2091 25.4436 8.65021 21.4167C5.83351 17.0687 4.08062 12.1183 3.53355 6.96666C3.4919 6.50577 3.54667 6.04126 3.69438 5.6027C3.84209 5.16414 4.0795 4.76114 4.39149 4.41936C4.70348 4.07758 5.08322 3.8045 5.50653 3.61753C5.92984 3.43055 6.38745 3.33376 6.85021 3.33332H11.8502C12.6591 3.32536 13.4432 3.61179 14.0565 4.13921C14.6698 4.66663 15.0703 5.39907 15.1835 6.19999C15.3946 7.8001 15.786 9.3712 16.3502 10.8833C16.5745 11.4799 16.623 12.1282 16.4901 12.7515C16.3571 13.3747 16.0483 13.9468 15.6002 14.4L13.4835 16.5167C15.8561 20.6892 19.311 24.1441 23.4835 26.5167L25.6002 24.4C26.0534 23.9519 26.6255 23.6431 27.2487 23.5101C27.872 23.3772 28.5203 23.4257 29.1169 23.65C30.629 24.2142 32.2001 24.6056 33.8002 24.8167C34.6098 24.9309 35.3492 25.3387 35.8778 25.9625C36.4063 26.5863 36.6872 27.3826 36.6669 28.2Z"  stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                     </div>
-                    <p><strong>Número celular</strong><br>57+3108834344</p>
+                    <p><strong>Número celular</strong><br><small>+57 3108834344</small></p>
                 </div>
                 <div class="footer-card card2">
                     <div class="contact-icons">
-                        <img src="./assets/images/mail 3.svg">
+                        <!-- <img src="./assets/images/mail 3.svg"> -->
+                        <svg  viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.66683 6.66666H33.3335C35.1668 6.66666 36.6668 8.16666 36.6668 9.99999V30C36.6668 31.8333 35.1668 33.3333 33.3335 33.3333H6.66683C4.8335 33.3333 3.3335 31.8333 3.3335 30V9.99999C3.3335 8.16666 4.8335 6.66666 6.66683 6.66666Z"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M36.6668 9.99998L20.0002 21.6667L3.3335 9.99998"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                     </div>
-                    <p><strong>Email</strong><br>jomifuver@hotmail.com</p>
+                    <p><strong>Email</strong><br><small>jomifuver@hotmail.com</small></p>
                 </div>
             </div>
-            <p>Hecho con ♥ en academlo</p>
+            <p>Hecho con <small class="heart">♥</small> en academlo</p>
         </footer>
     </main>
     
@@ -178,7 +252,7 @@
 
 
     
-    
+    <script src="./assets/JavaScript/main.js"> </script>
 </body>
 </html>
 
