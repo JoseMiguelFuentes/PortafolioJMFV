@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", () =>{
   
 //Test Dark mode.
 if ( JSON.parse (localStorage.getItem('theme') ) === true){
-document.body.classList.add ( "dark")
+document.body.classList.add ( "light")
 ball.classList.toggle ( "ball-move")
 }else{
-document.body.classList.remove ( "dark")
+document.body.classList.remove ( "light")
 }
  
 })
@@ -23,11 +23,22 @@ document.body.classList.remove ( "dark")
 
 
 themeButton.addEventListener( "click", ()=>{
-  document.body.classList.toggle ( "dark")
+  document.body.classList.toggle ( "light")
   ball.classList.toggle ( "ball-move")
-  if ( document.body.classList.contains ( "dark" ) ){
+  if ( document.body.classList.contains ( "light" ) ){
     localStorage.setItem('theme', JSON.stringify(true))
   }else{
     localStorage.setItem('theme', JSON.stringify(false))
   }
 } )
+
+
+let nav = document.querySelector ( "nav" )
+
+window.addEventListener( 'scroll', () => {
+  if (window.scrollY > 70){
+    nav.classList.add( "nav-efect" )
+  }else{
+    nav.classList.remove( "nav-efect")
+  }
+})
