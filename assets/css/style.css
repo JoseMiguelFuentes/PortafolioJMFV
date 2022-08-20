@@ -88,6 +88,7 @@
     --color-nEffect:  #ADADAD;
     --color-textShadow:transparent;
     --color-textShadow2: transparent;
+    --color-textShadow3: transparent;
     /*Desktop*/
     --PCtitulo-150pxSb: 100px;
     --PCsubtitulo-50pxSb: 50px;
@@ -114,6 +115,8 @@
     --color-nEffect:  #286F6C;
     --color-textShadow: #286F6C;
     --color-textShadow2: #ADADAD;
+    --color-textShadow3:   #F26440;
+    
 }
 
 body{
@@ -178,6 +181,8 @@ p{
 
 .gray-shadow{
     text-shadow: 0px 3px 5px  var(--color-textShadow);
+    font-weight: 300;
+    /* text-shadow: 0px 3px 5px  var(--color-textShadow); */
 }
 .orange-shadow{
     text-shadow: 0px 3px 5px  var(--color-textShadow2);
@@ -650,8 +655,11 @@ footer > p{
       /* Handle on hover */
       .portafolio-img::-webkit-scrollbar-thumb:hover {
         background-color: var(--color-scrollBg); 
-        
       } 
+      .gray-shadow{
+        text-shadow: 0px 3px 5px  var(--color-textShadow);
+        font-weight: 700;
+    }
       
      
 }
