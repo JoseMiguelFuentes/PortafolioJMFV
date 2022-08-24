@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jomifuver</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/portafolio.css">
     <link rel="icon" type="image/vnd.microsoft.icon" href="./assets/images/icons8-diploma-64.png">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -98,10 +99,10 @@
             <path class="st0" d="M64,301.8c55.9-472.6,1118.9,333.6,1423-132.8" stroke-width="2"/>
             <path class="st0" d="M39.4,264.3c56.2-475.2,1125,335.4,1430.8-133.6" stroke-width="3"/>
         </svg>
-        <section class="second-section">
+        <section class="second-section" id="about-me">
             <div class="second__section-textos">
-                <h3 class="second__section-h3 orange-shadow" id="about-me">Acerca de mí</h3>
-                <p class="second__section-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eaque ut quae quia ducimus repellendus facilis ratione minus, quaerat consectetur soluta libero provident similique? Quia explicabo tempore eveniet est aspernatur. Optio vel quae, explicabo incidunt veritatis animi necessitatibus </p>
+                <h3 class="second__section-h3 orange-shadow" >Acerca de mí</h3>
+                <p class="second__section-p">Apasionado del desarrollo web. Fascinado con los retos de este ámbito de la programación y de la satisfacción al resolver un problema con código. Amante de la naturaleza y los animales.  </p>
                 <!-- <img class="third__section-img" src="./assets/images/Group 97 - med.svg" > -->
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	            viewBox="0 0 121.6 195" style="enable-background:new 0 0 121.6 195;" xml:space="preserve" class="third__section-img">
@@ -152,25 +153,32 @@
                 </div>
             </div>
         </section>  
-        <section class="fourth-section">
-            <h3 class="fourth__section-h3 gray-shadow" id="xp">Experiencia</h3>
+        <section class="fourth-section" id="xp">
+            <h3 class="fourth__section-h3 gray-shadow" >Experiencia</h3>
             <div class="fourth-section-datos">
-                <p class="one-date">
+                <!-- <p class="one-date">
                     2016-2018
+                </p> -->
+                <p class="one-date">
+                    SomeDay
                 </p>
+                <!-- <div class="one-xp">
+                    <h4>Visual designer</h4>
+                    <p>Wizeline</p>
+                </div> -->
                 <div class="one-xp">
                     <h4>Visual designer</h4>
                     <p>Wizeline</p>
                 </div>
                 <p class="two-date">
-                    2018-2019
+                    Someday
                 </p>
                 <div class="two-xp">
                     <h4>Product designer</h4>
                     <p>Microsoft</p>
                 </div>
                 <p class="three-date">
-                    2019-2021
+                    SomeDay
                 </p>
                 <div class="three-xp">
                     <h4>UI Enginer</h4>
@@ -190,25 +198,66 @@
             <div class="portafolio-img">
 
                 <div class="portafolio-item">
-                    <a href="https://rick-and-morty-jose-fuentes.netlify.app" target="_blank"> <img src="./assets/images/First.png" alt="Rick and Morty"></a>
+                     <img src="./assets/images/First.png" alt="Rick and Morty">
+                    <article class="info">
+                        <h4><em>Rick and Morty App</em></h4>
+                        <p>• Peticiones Http a la Rick and mortyApi con axios. <br>
+                            • Búsqueda de locaciones id</p>
+                        <a href="https://rick-and-morty-jose-fuentes.netlify.app" target="_blank"><h6>Ir a proyecto</h6></a>
+                        <div class="info-back"></div>
+                    </article>
                 </div>
 
-                <div class="portafolio-item">
-                    <a href="https://jose-fuentes-store.netlify.app/#/" target="_blank">
-                        <img src="./assets/images/captura.png">
-                    </a>
+                <div class="portafolio-eC">
+                    <img src="./assets/images/captura.png">
+                    <article class="info">
+                        <h4><em>E-commerce</em></h4>
+                        <article >
+                            <p>• Función de iniciar sesión en para reapzar compras.</p>
+                            <p>• En caso de no tener cuenta posibipdad de crear una.</p>
+                            <p>• Botón de traducir de Ingles- Español o viceversa.</p>
+                            <p>• Estados global con Redux.</p>
+                            <p>• Rutas protegidas con react-router-dom.</p>
+                            <p>• Se usan peticiones http para obtención de productos 
+                                y procesos de inicio de sesión.</p>
+                        </article>
+                        
+                       
+                        <a href="https://jose-fuentes-store.netlify.app/#/" target="_blank">
+                            <h6>Ir a proyecto</h6>
+                        </a>
+                    </article>
                 </div>
 
-                <div class="portafolio-item">
+                <div class="portafolio-item3">
+                    <img src="./assets/images/Pokedex.PNG">
+                    <article class="info" style="list-style: circle;">
+                        <h4><em>Pokedex</em></h4>
+                        <ul >
+                            <li>• Peticiones Http a la Poke-Api  con axios.</li>
+                            <li>• Listados de Pokemones por tipo.</li>
+                            <li>• Búsqueda por numero/nombre.</li>
+                            <li>• Paginación y efectos visuales con animaciones.</li>
+                            <li>• Paginacon detalles adicionales.</li>
+                        </ul>
                     <a href="https://pokedex-jose-fuentes.netlify.app/" target="_blank">
-                        <img src="./assets/images/Pokedex.PNG">
+                        <h6>Ir a proyecto</h6>
                     </a>
+                    </article>
                 </div>
 
-                <div class="portafolio-item">
-                    <a href="">
-                        <img src="./assets/images/image 11.jpg">
-                    </a>
+                <div class="portafolio-item4">
+                    <img src="./assets/images/image 11.jpg">
+                    <article class="info">
+                        <h4><em>Proximamente....</em></h4>
+                        <p >
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus placeat fugiat ut doloribus nemo nihil illum consectetur exercitationem commodi vitae!
+                        </p>
+                        
+                        <a href="">
+                            <h6>Ir a proyecto</h6>                       
+                        </a>
+                    </article>
                 </div>
             </div>
         </section>
